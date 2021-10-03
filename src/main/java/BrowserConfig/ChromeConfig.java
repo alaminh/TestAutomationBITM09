@@ -12,6 +12,8 @@ public class ChromeConfig {
         //FirefoxConfig obj=new FirefoxConfig();
         //obj.testMethod1();
         launch_Chrome();
+        //Close_Chrome();
+        quit_Chrome();
     }
 
     public static void launch_Chrome()
@@ -20,5 +22,16 @@ public class ChromeConfig {
         driver = new ChromeDriver();
 
     }
+
+
+    public static void Close_Chrome()
+    {
+        driver.close();
+    }
+    public static void quit_Chrome()
+    {
+        driver.quit();
+    }
+
 
 }
